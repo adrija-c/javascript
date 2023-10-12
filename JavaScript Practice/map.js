@@ -1,4 +1,4 @@
-ffunction mapArray(arr, callbackFunc) {
+function mapArray(arr, callbackFunc) {
     const finalList = [];
     for (let i = 0; i < arr.length; i++) {
         const val = callbackFunc(arr[i]);
