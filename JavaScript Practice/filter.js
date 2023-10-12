@@ -1,8 +1,8 @@
-function filterArray(array, condition) {
+function filterArray(array, callbackFunc) {
     const finalList = [];
 
     for (let i = 0; i < array.length; i++) {
-        if (condition(array[i])) {
+        if (callbackFunc(array[i])) {
             finalList.push(array[i]);
         }
     }
